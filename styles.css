@@ -12,7 +12,7 @@
   --text-on-dark: #f4f7ff;
   --text-on-light: #111527;
   --muted-dark: #a8b4d4;
-  --muted-light: #4a5470;
+  --muted-light: #2f374f;
   --white: #ffffff;
   --glass: rgba(255, 255, 255, 0.06);
   --glass-border: rgba(255, 255, 255, 0.12);
@@ -838,16 +838,13 @@ button {
 .step::before {
   counter-increment: step;
   content: counter(step);
-  display: grid;
-  place-items: center;
-  width: 2.25rem;
-  height: 2.25rem;
-  border-radius: 50%;
-  background: var(--lime);
-  color: var(--navy);
+  display: block;
   font-family: var(--font-display);
-  font-weight: 800;
-  margin-bottom: 0.85rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--blue);
+  margin-bottom: 0.5rem;
 }
 
 .step h3 {
@@ -954,15 +951,18 @@ button {
   color: var(--muted-dark);
 }
 
-.section--cream .trust-item h3 {
+.section--cream .trust-item h3,
+.section--surface .trust-item h3 {
   color: var(--text-on-light);
 }
 
-.section--cream .trust-item p {
+.section--cream .trust-item p,
+.section--surface .trust-item p {
   color: var(--muted-light);
 }
 
-.section--cream .trust-item .icon {
+.section--cream .trust-item .icon,
+.section--surface .trust-item .icon {
   filter: brightness(0) saturate(100%) invert(18%) sepia(90%) saturate(2500%) hue-rotate(210deg) brightness(0.95);
 }
 
@@ -2420,11 +2420,49 @@ body.modal-open {
 .demo-example-visual .ui-panel--mini {
   min-height: 7.5rem;
   padding: 1rem;
+  background: var(--navy-mid);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--text-on-dark);
+  border-radius: 12px;
+}
+
+.demo-example-visual .ui-chip,
+.demo-example-visual .ui-kicker {
+  color: var(--lime);
+}
+
+.demo-example-visual .ui-site-body strong,
+.demo-example-visual .ui-site-body p,
+.demo-example-visual .ui-post-row strong,
+.demo-example-visual .ui-crm-cols h4,
+.demo-example-visual .ui-crm-cols span {
+  color: var(--text-on-dark);
+}
+
+.demo-example-visual .ui-crm-cols span,
+.demo-example-visual .ui-post-row {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-on-dark);
+}
+
+.demo-example .btn-secondary {
+  color: var(--text-on-light);
+  border-color: rgba(17, 21, 39, 0.22);
+  justify-self: start;
+}
+
+.demo-example .btn-secondary:hover {
+  background: rgba(17, 21, 39, 0.05);
+  border-color: rgba(17, 21, 39, 0.35);
 }
 
 .demo-meta {
   color: var(--muted-light);
   font-size: 0.95rem;
+}
+
+.demo-meta strong {
+  color: var(--text-on-light);
 }
 
 .demo-footnote {
@@ -2438,20 +2476,22 @@ body.modal-open {
   grid-template-columns: 1fr;
 }
 
-.step-num {
-  display: block;
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  font-weight: 700;
-  line-height: 1;
-  color: var(--blue);
-  margin-bottom: 0.5rem;
-}
-
 @media (min-width: 800px) {
   .steps--three {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.section--cream .btn-secondary,
+.section--surface .btn-secondary {
+  color: var(--text-on-light);
+  border-color: rgba(17, 21, 39, 0.22);
+}
+
+.section--cream .btn-secondary:hover,
+.section--surface .btn-secondary:hover {
+  background: rgba(17, 21, 39, 0.05);
+  border-color: rgba(17, 21, 39, 0.35);
 }
 
 .audience-chips {
