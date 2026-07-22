@@ -224,7 +224,7 @@ Esta deve ser a principal seção da landing page.
 
 Utilize um título comercial:
 
-`Seis ferramentas para tarefas que fazem parte da sua rotina`
+`Ferramentas para tarefas que fazem parte da sua rotina`
 
 Texto de apoio:
 
