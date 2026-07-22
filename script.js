@@ -1,12 +1,25 @@
 (function () {
   "use strict";
 
+  var SITE_LEGAL = {
+    privacyUrl: "https://myeasyai.com/support",
+    termsUrl: "https://myeasyai.com/support"
+  };
+
   var yearEl = document.getElementById("year");
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
   }
 
-  /* Mobile menu */
+  var privacyLink = document.getElementById("link-privacy");
+  var termsLink = document.getElementById("link-terms");
+  if (privacyLink && SITE_LEGAL.privacyUrl) {
+    privacyLink.href = SITE_LEGAL.privacyUrl;
+  }
+  if (termsLink && SITE_LEGAL.termsUrl) {
+    termsLink.href = SITE_LEGAL.termsUrl;
+  }
+
   var toggle = document.getElementById("menu-toggle");
   var panel = document.getElementById("nav-mobile");
 
@@ -40,7 +53,6 @@
     });
   }
 
-  /* FAQ accordion */
   document.querySelectorAll(".faq-item > button").forEach(function (button) {
     button.addEventListener("click", function () {
       var expanded = button.getAttribute("aria-expanded") === "true";
@@ -66,7 +78,6 @@
     });
   });
 
-  /* Billing toggle */
   var monthlyBtn = document.getElementById("billing-monthly");
   var annualBtn = document.getElementById("billing-annual");
 
@@ -111,11 +122,10 @@
 
   applyBilling(document.body.getAttribute("data-billing") || "annual");
 
-  /* —— Module modal —— */
   var MODULES = {
     website: {
       name: "MyEasyWebsite",
-      tagline: "Seu assistente melhora o site com você, conversando",
+      tagline: "Crie e ajuste o site conversando com o assistente",
       icon: "assets/icons/globe.svg",
       preview: "website"
     },
@@ -127,7 +137,7 @@
     },
     clientes: {
       name: "MyEasyClientes",
-      tagline: "CRM com IA para contatos, vendas e follow-up",
+      tagline: "Organize contatos, vendas e follow-up",
       icon: "assets/icons/users.svg",
       preview: "clientes"
     },
@@ -148,7 +158,7 @@
     },
     juridico: {
       name: "MyEasyJurídico",
-      tagline: "PDFs, templates e orientações sobre leis brasileiras",
+      tagline: "Organize documentos e modelos de apoio",
       icon: "assets/icons/scale.svg",
       preview: "simple",
       steps: [
@@ -157,9 +167,10 @@
         "Baixe ou copie o resultado organizado"
       ],
       chat: [
-        { role: "user", text: "Preciso de um modelo básico de contrato de prestação." },
-        { role: "bot", text: "Abri os templates. Me diga o tipo de serviço e as partes envolvidas." }
-      ]
+        { role: "user", text: "Preciso organizar um modelo básico de contrato de prestação." },
+        { role: "bot", text: "Abri os modelos. Informe o tipo de serviço e as partes envolvidas." }
+      ],
+      notice: "Este recurso não substitui orientação jurídica profissional."
     },
     preco: {
       name: "MyEasyPreço",
@@ -173,7 +184,7 @@
       ],
       chat: [
         { role: "user", text: "Quero precificar um serviço de consultoria por hora." },
-        { role: "bot", text: "Me passa custo mensal, horas disponíveis e margem desejada." }
+        { role: "bot", text: "Informe o custo mensal, as horas disponíveis e a margem desejada." }
       ]
     },
     avatar: {
@@ -208,17 +219,17 @@
     },
     emprego: {
       name: "MyEasyEmprego",
-      tagline: "Currículo e preparação para entrevistas",
+      tagline: "Currículo claro e preparação para entrevistas",
       icon: "assets/icons/file-text.svg",
       preview: "simple",
       steps: [
         "Informe experiência e objetivo",
-        "Gere o currículo alinhado ao mercado",
+        "Organize o currículo para a vaga",
         "Treine respostas de entrevista"
       ],
       chat: [
         { role: "user", text: "Preciso de um currículo para vaga de atendimento." },
-        { role: "bot", text: "Me conta suas experiências recentes que eu monto a estrutura." }
+        { role: "bot", text: "Conte suas experiências recentes que eu monto a estrutura." }
       ]
     },
     rh: {
@@ -253,13 +264,13 @@
     },
     cursos: {
       name: "MyEasyCursos",
-      tagline: "Cursos sob demanda com plano e certificado",
+      tagline: "Cursos sob demanda com plano e certificado da plataforma",
       icon: "assets/icons/graduation-cap.svg",
       preview: "simple",
       steps: [
         "Escolha o tema",
         "Receba o plano de estudos",
-        "Acompanhe o progresso até o certificado"
+        "Acompanhe o progresso até o certificado da plataforma"
       ],
       chat: [
         { role: "user", text: "Quero um curso rápido de planilhas para vendas." },
@@ -283,33 +294,35 @@
     },
     fitness: {
       name: "MyEasyFitness",
-      tagline: "Treinos personalizados para a sua rotina",
+      tagline: "Organize e planeje treinos da sua rotina",
       icon: "assets/icons/dumbbell.svg",
       preview: "simple",
       steps: [
         "Informe objetivo e nível",
-        "Receba o plano de treino",
+        "Receba um plano de treino geral",
         "Ajuste frequência e exercícios"
       ],
       chat: [
         { role: "user", text: "Quero treinar em casa 3 vezes por semana." },
         { role: "bot", text: "Montei um plano iniciante. Prefere foco em força ou condicionamento?" }
-      ]
+      ],
+      notice: "Este recurso não substitui avaliação de profissional de educação física ou saúde."
     },
     nutricao: {
       name: "MyEasyNutrição",
-      tagline: "Refeições, macros e lista de compras",
+      tagline: "Refeições, preferências e lista de compras",
       icon: "assets/icons/utensils.svg",
       preview: "simple",
       steps: [
-        "Informe meta e preferências",
-        "Receba o plano de refeições",
+        "Informe preferências alimentares",
+        "Organize o planejamento semanal de refeições",
         "Gere a lista de compras da semana"
       ],
       chat: [
-        { role: "user", text: "Quero um cardápio simples para emagrecer." },
+        { role: "user", text: "Quero um cardápio semanal simples com lista de compras." },
         { role: "bot", text: "Me diga restrições alimentares e quantas refeições por dia." }
-      ]
+      ],
+      notice: "Este recurso não substitui nutricionista ou profissional de saúde."
     },
     viagens: {
       name: "MyEasyViagens",
@@ -372,10 +385,10 @@
       '<div class="pv-lines" aria-hidden="true"><i></i><i></i><i></i></div>' +
       "</div></div>" +
       '<aside class="pv-chat">' +
-      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge (IA)</strong></div></div>' +
+      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge</strong></div></div>' +
       '<div class="pv-chat-body">' +
       chatHtml([
-        { role: "user", text: "Quero criar um site pra minha barbearia" },
+        { role: "user", text: "Quero criar um site para minha barbearia" },
         { role: "bot", text: "Me diga o nome da barbearia que a gente monta juntos." },
         { role: "user", text: "O nome é Barbearia Estilo" },
         { role: "bot", text: "Já comecei do lado. Agora descreva os serviços e o bairro." }
@@ -395,12 +408,12 @@
       '<div class="pv-split">' +
       '<div class="pv-site pv-posts">' +
       '<p class="pv-kicker">Calendário da semana</p>' +
-      '<div class="pv-post-card"><span class="pv-badge">SEG</span><strong>Antes e depois do corte</strong><p>Legenda + imagem sugerida para Instagram</p></div>' +
-      '<div class="pv-post-card"><span class="pv-badge">QUA</span><strong>Promoção de quarta</strong><p>CTA para agendar pelo WhatsApp</p></div>' +
+      '<div class="pv-post-card"><span class="pv-badge">SEG</span><strong>Antes e depois do corte</strong><p>Legenda e imagem sugerida para Instagram</p></div>' +
+      '<div class="pv-post-card"><span class="pv-badge">QUA</span><strong>Promoção de quarta</strong><p>Chamada para agendar pelo WhatsApp</p></div>' +
       '<div class="pv-post-card"><span class="pv-badge">SEX</span><strong>Dica de cuidados</strong><p>Carrossel educativo pronto para editar</p></div>' +
       "</div>" +
       '<aside class="pv-chat">' +
-      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge (IA)</strong></div></div>' +
+      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge</strong></div></div>' +
       '<div class="pv-chat-body">' +
       chatHtml([
         { role: "user", text: "Preciso de 5 posts para a barbearia esta semana." },
@@ -427,7 +440,7 @@
       '<div><h5>Fechado</h5><div class="pv-crm-card">João · mensal</div></div>' +
       "</div></div>" +
       '<aside class="pv-chat">' +
-      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge (IA)</strong></div></div>' +
+      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge</strong></div></div>' +
       '<div class="pv-chat-body">' +
       chatHtml([
         { role: "user", text: "Quem eu preciso retornar hoje?" },
@@ -445,6 +458,9 @@
         return "<li><span>" + (i + 1) + "</span>" + escapeHtml(s) + "</li>";
       })
       .join("");
+    var notice = mod.notice
+      ? '<p class="pv-notice">' + escapeHtml(mod.notice) + "</p>"
+      : "";
     return (
       '<div class="pv-app pv-simple">' +
       '<div class="pv-simple-main">' +
@@ -456,9 +472,11 @@
       "</h4>" +
       '<ol class="pv-simple-steps">' +
       steps +
-      "</ol></div>" +
+      "</ol>" +
+      notice +
+      "</div>" +
       '<aside class="pv-chat">' +
-      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge (IA)</strong></div></div>' +
+      '<div class="pv-chat-head"><img src="assets/jorge-face.png" width="32" height="32" alt=""><div><strong>Jorge</strong></div></div>' +
       '<div class="pv-chat-body">' +
       chatHtml(mod.chat || []) +
       "</div></aside></div>"

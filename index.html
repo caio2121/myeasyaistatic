@@ -3,34 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyEasyAI | IA pronta para sites, clientes e conteúdos | 30 dias grátis</title>
-  <meta name="description" content="Plataforma com módulos de inteligência artificial prontos para criar sites, organizar clientes, planejar o negócio e produzir conteúdos. Sem prompts. 30 dias grátis, sem cartão.">
-  <link rel="canonical" href="https://caioa.github.io/myeasyaistatic/">
-  <meta name="robots" content="index, follow">
+  <script type="application/json" id="site-env">{"env":"staging","baseUrl":"https://caio2121.github.io/myeasyaistatic/","productionBaseUrl":"https://myeasyai.com/","robotsStaging":"noindex, nofollow","robotsProduction":"index, follow"}</script>
+  <title>MyEasyAI | Ferramentas de IA prontas para seu negócio</title>
+  <meta name="description" content="Crie site, conteúdo e organize clientes com ferramentas de IA prontas para autônomos e pequenos negócios. Interface em português, sem prompts. Teste grátis por 30 dias, sem cartão.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="myeasyai:canonical-production" content="https://myeasyai.com/">
   <meta name="author" content="MyEasyAI">
   <meta name="theme-color" content="#091232">
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="MyEasyAI">
-  <meta property="og:url" content="https://caioa.github.io/myeasyaistatic/">
-  <meta property="og:title" content="MyEasyAI | IA pronta para trabalhar por você">
-  <meta property="og:description" content="Crie sites, organize clientes e produza conteúdos com módulos de IA já configurados. 30 dias grátis, sem cartão.">
-  <meta property="og:image" content="https://caioa.github.io/myeasyaistatic/assets/social/og-image.webp">
+  <meta property="og:url" content="https://caio2121.github.io/myeasyaistatic/">
+  <meta property="og:title" content="MyEasyAI | Ferramentas de IA prontas para seu negócio">
+  <meta property="og:description" content="Crie site, conteúdo e organize clientes com ferramentas de IA prontas. Teste grátis por 30 dias, sem cartão.">
+  <meta property="og:image" content="https://caio2121.github.io/myeasyaistatic/assets/social/og-image.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="MyEasyAI, plataforma de IA fácil para o dia a dia">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MyEasyAI | IA pronta para trabalhar por você">
-  <meta name="twitter:description" content="Módulos de IA prontos para sites, clientes, conteúdos e rotina. 30 dias grátis, sem cartão.">
-  <meta name="twitter:image" content="https://caioa.github.io/myeasyaistatic/assets/social/og-image.webp">
+  <meta name="twitter:title" content="MyEasyAI | Ferramentas de IA prontas para seu negócio">
+  <meta name="twitter:description" content="Ferramentas de IA prontas para site, conteúdo e clientes. Teste grátis por 30 dias, sem cartão.">
+  <meta name="twitter:image" content="https://caio2121.github.io/myeasyaistatic/assets/social/og-image.webp">
 
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
   <link rel="apple-touch-icon" href="assets/favicon-32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 
   <script type="application/ld+json">
@@ -42,14 +43,14 @@
         "@id": "https://myeasyai.com/#organization",
         "name": "MyEasyAI",
         "url": "https://myeasyai.com/",
-        "logo": "https://caioa.github.io/myeasyaistatic/assets/logo/logo.svg",
+        "logo": "https://myeasyai.com/logo-symbol-outline-white.svg",
         "email": "support@myeasyai.com",
         "sameAs": [
           "https://www.instagram.com/myeasyai",
           "https://www.youtube.com/@MyEasyAI",
           "https://x.com/myeasyai"
         ],
-        "description": "Plataforma com módulos de inteligência artificial prontos para pessoas e pequenos negócios sem conhecimento técnico."
+        "description": "Plataforma com ferramentas de inteligência artificial prontas para pessoas e pequenos negócios sem conhecimento técnico."
       },
       {
         "@type": "WebSite",
@@ -66,7 +67,7 @@
         "applicationCategory": "BusinessApplication",
         "operatingSystem": "Web",
         "url": "https://myeasyai.com/",
-        "description": "Crie sites, organize clientes, planeje o negócio, produza conteúdos e resolva tarefas do dia a dia com módulos de IA já configurados. Sem programação e sem prompts.",
+        "description": "Crie sites, organize clientes, produza conteúdos e resolva tarefas do dia a dia com ferramentas de IA já configuradas. Sem programação e sem prompts.",
         "offers": [
           {
             "@type": "Offer",
@@ -81,7 +82,15 @@
             "name": "Individual anual",
             "price": "299.70",
             "priceCurrency": "BRL",
-            "description": "Plano Individual anual, equivalente a R$ 29,70 por mês.",
+            "description": "Plano Individual cobrado anualmente (R$ 299,70/ano), equivalente a R$ 29,70 por mês.",
+            "url": "https://myeasyai.com/auth/signup"
+          },
+          {
+            "@type": "Offer",
+            "name": "Individual mensal",
+            "price": "79.40",
+            "priceCurrency": "BRL",
+            "description": "Plano Individual com cobrança mensal de R$ 79,40 por mês.",
             "url": "https://myeasyai.com/auth/signup"
           },
           {
@@ -89,7 +98,15 @@
             "name": "Plus anual",
             "price": "399.70",
             "priceCurrency": "BRL",
-            "description": "Plano Plus anual, equivalente a R$ 39,70 por mês.",
+            "description": "Plano Plus cobrado anualmente (R$ 399,70/ano), equivalente a R$ 39,70 por mês.",
+            "url": "https://myeasyai.com/auth/signup"
+          },
+          {
+            "@type": "Offer",
+            "name": "Plus mensal",
+            "price": "119.40",
+            "priceCurrency": "BRL",
+            "description": "Plano Plus com cobrança mensal de R$ 119,40 por mês.",
             "url": "https://myeasyai.com/auth/signup"
           },
           {
@@ -97,7 +114,15 @@
             "name": "Premium anual",
             "price": "499.70",
             "priceCurrency": "BRL",
-            "description": "Plano Premium anual, equivalente a R$ 49,70 por mês.",
+            "description": "Plano Premium cobrado anualmente (R$ 499,70/ano), equivalente a R$ 49,70 por mês.",
+            "url": "https://myeasyai.com/auth/signup"
+          },
+          {
+            "@type": "Offer",
+            "name": "Premium mensal",
+            "price": "159.40",
+            "priceCurrency": "BRL",
+            "description": "Plano Premium com cobrança mensal de R$ 159,40 por mês.",
             "url": "https://myeasyai.com/auth/signup"
           }
         ],
@@ -108,71 +133,99 @@
           "CRM e organização de clientes",
           "Produção de conteúdos",
           "Finanças e planejamento",
-          "Módulos prontos sem prompts"
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://caioa.github.io/myeasyaistatic/#breadcrumb",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "MyEasyAI",
-            "item": "https://caioa.github.io/myeasyaistatic/"
-          }
+          "Ferramentas prontas sem prompts"
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://caioa.github.io/myeasyaistatic/#faq",
+        "@id": "https://myeasyai.com/#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Eu preciso saber programar ou entender de prompts para usar a MyEasyAI?",
+            "name": "Eu preciso saber programar ou entender de prompts?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Não. Os módulos já vêm configurados. Você responde perguntas simples em português e a plataforma monta o resultado."
+              "text": "Não. As ferramentas já vêm configuradas. Você responde perguntas simples em português e a plataforma monta o resultado."
             }
           },
           {
             "@type": "Question",
-            "name": "O que são os módulos da MyEasyAI?",
+            "name": "O que são os módulos?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "São ferramentas prontas para tarefas específicas, como criar site, organizar clientes, gerar posts, controlar finanças ou montar currículo. Cada módulo guia o uso sem tela em branco."
+              "text": "São ferramentas prontas para tarefas específicas: site, clientes, posts, finanças, currículo e outras. Cada módulo guia o uso sem tela em branco."
             }
           },
           {
             "@type": "Question",
-            "name": "Preciso de cartão de crédito para o teste grátis?",
+            "name": "Como o assistente funciona?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Não. Você começa o teste de 30 dias sem cartão. Só adiciona um meio de pagamento se quiser continuar depois do período gratuito."
+              "text": "Você personaliza nome e aparência. Ele conhece a plataforma, indica o módulo certo e também funciona como chat de IA dentro do produto."
             }
           },
           {
             "@type": "Question",
-            "name": "Como cancelo a assinatura?",
+            "name": "Qual a diferença para o ChatGPT ou o Gemini?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Você pode cancelar quando quiser, em poucos cliques na própria conta, sem precisar falar com atendimento."
+              "text": "Assistentes genéricos pedem que você saiba o que pedir e começam com uma tela em branco. A MyEasyAI oferece ferramentas guiadas para tarefas reais, com resultados estruturados e suporte em português."
             }
           },
           {
             "@type": "Question",
-            "name": "Qual a diferença entre a MyEasyAI e o ChatGPT ou o Gemini?",
+            "name": "Preciso de cartão no teste de 30 dias?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Assistentes genéricos começam com uma tela em branco e pedem que você saiba o que pedir. A MyEasyAI oferece módulos guiados para tarefas reais, com resultados estruturados e suporte em português."
+              "text": "Não. Você começa sem cartão. Só adiciona um meio de pagamento se quiser continuar depois do período gratuito. A plataforma avisa por e-mail antes do fim do teste."
             }
           },
           {
             "@type": "Question",
-            "name": "Meus dados estão seguros na MyEasyAI?",
+            "name": "Como cancelo?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A plataforma usa infraestrutura de provedores reconhecidos e pagamentos processados pela Stripe. Há auditoria de segurança citada publicamente pela CyberShield. A MyEasyAI não armazena os dados do cartão."
+              "text": "Você pode cancelar quando quiser, em poucos cliques na conta, sem precisar falar com atendimento."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "O que é o MyEasyCursos?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "É o módulo que gera cursos sob demanda, com materiais, plano de estudos, acompanhamento e certificado emitido pela plataforma ao concluir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Novos módulos entram com custo extra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Atualizações e novos módulos tendem a entrar sem custo extra dentro das regras do plano contratado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o suporte?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Há central de ajuda e tickets com atendimento humano em português. Planos superiores têm suporte prioritário por e-mail."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Meus dados estão seguros?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A plataforma usa infraestrutura de provedores reconhecidos e pagamentos pela Stripe. Há menção a auditoria CyberShield. Dados de cartão não ficam armazenados na MyEasyAI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funcionam os planos Individual, Plus e Premium?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A diferença principal está na quantidade de módulos, sites, armazenamento e recursos avançados. Você pode começar no Individual e fazer upgrade depois, pagando apenas a diferença."
             }
           }
         ]
@@ -185,20 +238,19 @@
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
   <div class="promo-banner" role="region" aria-label="Oferta promocional">
-    <p>30 dias grátis · Sem cartão · Cancele quando quiser</p>
+    <p>30 dias grátis. Sem cartão para começar.</p>
   </div>
 
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="#topo" aria-label="MyEasyAI, início da página">
-        <img src="assets/logo/logo.svg" width="36" height="36" alt="">
+        <img src="assets/logo/logo.svg" width="36" height="36" alt="" aria-hidden="true">
         <span class="brand-name">MyEasyAI</span>
       </a>
 
       <nav class="nav-desktop" aria-label="Principal">
         <a href="#como-funciona">Como funciona</a>
         <a href="#ferramentas">Ferramentas</a>
-        <a href="#beneficios">Benefícios</a>
         <a href="#planos">Planos</a>
         <a href="#faq">Perguntas frequentes</a>
       </nav>
@@ -215,7 +267,6 @@
     <nav class="nav-mobile" id="nav-mobile" aria-label="Menu mobile" hidden>
       <a href="#como-funciona">Como funciona</a>
       <a href="#ferramentas">Ferramentas</a>
-      <a href="#beneficios">Benefícios</a>
       <a href="#planos">Planos</a>
       <a href="#faq">Perguntas frequentes</a>
       <a href="https://myeasyai.com/auth/login">Entrar</a>
@@ -228,16 +279,16 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Plataforma de IA para o dia a dia</p>
-          <h1 id="hero-title">Faça em minutos o que antes exigia várias ferramentas e especialistas</h1>
+          <p class="eyebrow">IA simples para trabalhar, vender e organizar</p>
+          <h1 id="hero-title">Crie sites, conteúdos e processos de venda com IA, sem precisar aprender prompts</h1>
           <p class="lead">
-            A MyEasyAI reúne módulos de inteligência artificial já configurados para criar site, organizar clientes, planejar o negócio, produzir conteúdos e resolver tarefas do cotidiano.
+            A MyEasyAI reúne ferramentas prontas para tirar ideias do papel, organizar clientes e acelerar tarefas do seu negócio em uma única plataforma.
           </p>
-          <p class="diff">Sem programação. Sem precisar aprender prompts. Sem começar por uma tela em branco.</p>
+          <p>Você escolhe o que precisa, responde perguntas simples e recebe um resultado pronto para revisar e usar.</p>
 
           <div class="cta-row">
             <a class="btn btn-primary btn-lg" href="https://myeasyai.com/auth/signup">Testar grátis por 30 dias</a>
-            <a class="btn btn-secondary btn-lg" href="#como-funciona">Ver como funciona</a>
+            <a class="btn btn-secondary btn-lg" href="#demonstracao">Ver a plataforma por dentro</a>
           </div>
 
           <ul class="trust-list">
@@ -257,12 +308,12 @@
         </div>
 
         <div class="hero-visual">
-          <div class="product-mockup" role="img" aria-label="Prévia da plataforma MyEasyAI com assistente personalizado e módulos prontos">
-            <div class="mockup-chrome">
-              <div class="mockup-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="product-mockup" role="img" aria-label="Demonstração da criação de um site de marmitas: o assistente pergunta o nome do negócio e o rascunho do site aparece ao lado.">
+            <div class="mockup-chrome" aria-hidden="true">
+              <div class="mockup-dots"><span></span><span></span><span></span></div>
               <div class="mockup-url">app.myeasyai.com</div>
             </div>
-            <div class="mockup-body">
+            <div class="mockup-body" aria-hidden="true">
               <aside class="mockup-sidebar">
                 <div class="sidebar-brand">
                   <img src="assets/logo/logo.svg" width="22" height="22" alt="">
@@ -273,42 +324,28 @@
                     <img src="assets/icons/website.svg" width="16" height="16" alt="">
                     Website
                   </li>
-                  <li>
-                    <img src="assets/icons/clientes.svg" width="16" height="16" alt="">
-                    Clientes
-                  </li>
-                  <li>
-                    <img src="assets/icons/posts.svg" width="16" height="16" alt="">
-                    Posts
-                  </li>
-                  <li>
-                    <img src="assets/icons/financas.svg" width="16" height="16" alt="">
-                    Finanças
-                  </li>
                 </ul>
               </aside>
               <div class="mockup-main">
                 <div class="assistant-panel">
                   <div class="assistant-head">
-                    <img class="assistant-avatar" src="assets/jorge-face.png" width="44" height="44" alt="Assistente Jorge">
+                    <img class="assistant-avatar" src="assets/jorge-face.png" width="44" height="44" alt="">
                     <div>
                       <p class="assistant-name">Jorge</p>
                       <p class="assistant-status"><span class="pulse"></span> online, do seu jeito</p>
                     </div>
                   </div>
                   <div class="chat">
-                    <div class="bubble user">Quero um site pro meu negócio de marmitas. Por onde começo?</div>
-                    <div class="bubble bot">Vou abrir o <strong>MyEasyWebsite</strong> com você. Em minutos seu site pode estar no ar, sem programar.</div>
+                    <div class="bubble user">Quero um site para minha marmitaria. Por onde começo?</div>
+                    <div class="bubble bot">Vou abrir o <strong>MyEasyWebsite</strong> com você. Me diga o nome do negócio e montamos o rascunho juntos.</div>
                   </div>
                 </div>
                 <div class="result-chip">
-                  <span class="result-label">Resultado</span>
-                  <p>Site no ar · CRM organizado · Posts da semana prontos</p>
+                  <span class="result-label">Status</span>
+                  <p>Rascunho do site em montagem · Página inicial quase pronta</p>
                 </div>
                 <ul class="module-row">
                   <li><img src="assets/icons/website.svg" width="18" height="18" alt=""> MyEasyWebsite</li>
-                  <li><img src="assets/icons/clientes.svg" width="18" height="18" alt=""> MyEasyClientes</li>
-                  <li><img src="assets/icons/posts.svg" width="18" height="18" alt=""> MyEasyPosts</li>
                 </ul>
               </div>
             </div>
@@ -317,273 +354,42 @@
       </div>
     </section>
 
-    <section class="section section--cream" id="beneficios" aria-labelledby="beneficios-title">
+    <section class="section section--cream" id="resultados" aria-labelledby="resultados-title">
       <div class="container">
         <div class="section-head">
-          <p class="eyebrow">Proposta de valor</p>
-          <h2 class="section-title" id="beneficios-title">O que você ganha ao usar a MyEasyAI</h2>
-          <p class="section-lead">Ferramentas prontas para tarefas reais, reunidas em uma assinatura, com interface em português e fluxo guiado.</p>
+          <h2 class="section-title" id="resultados-title">O que você consegue fazer na MyEasyAI</h2>
+          <p class="section-lead">Tarefas concretas para o dia a dia do trabalho, da venda e da organização pessoal.</p>
         </div>
-        <div class="value-grid">
+        <div class="results-grid value-grid">
           <article class="value-item">
-            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/layers.svg" alt=""></div>
-            <h3>Módulos já configurados</h3>
-            <p>Cada ferramenta chega pronta para uma tarefa específica. Você não monta prompt do zero.</p>
-          </article>
-          <article class="value-item">
-            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/sparkles.svg" alt=""></div>
-            <h3>Uso sem conhecimento técnico</h3>
-            <p>Responda perguntas simples. A plataforma organiza o processo e entrega um resultado estruturado.</p>
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/website.svg" alt="" aria-hidden="true"></div>
+            <h3>Criar um site</h3>
+            <p>Publique uma página para o seu negócio com nome, domínio e conteúdo inicial, sem programar.</p>
           </article>
           <article class="value-item">
-            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/briefcase.svg" alt=""></div>
-            <h3>Tudo em um só lugar</h3>
-            <p>Site, clientes, posts, finanças, currículo e mais. Menos contas espalhadas e menos ferramentas soltas.</p>
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/posts.svg" alt="" aria-hidden="true"></div>
+            <h3>Produzir conteúdo</h3>
+            <p>Gere posts, legendas e calendário editorial para manter presença nas redes com mais consistência.</p>
           </article>
           <article class="value-item">
-            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/clock.svg" alt=""></div>
-            <h3>Menos tempo gasto em setup</h3>
-            <p>Do cadastro ao primeiro resultado em minutos, com assistente que indica o próximo passo.</p>
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/clientes.svg" alt="" aria-hidden="true"></div>
+            <h3>Organizar contatos e vendas</h3>
+            <p>Registre clientes, acompanhe follow-up e mantenha a rotina comercial em um só lugar.</p>
           </article>
           <article class="value-item">
-            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/message-circle.svg" alt=""></div>
-            <h3>Suporte em português</h3>
-            <p>Atendimento humano para dúvidas sobre a plataforma, além do assistente dentro do produto.</p>
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/briefcase.svg" alt="" aria-hidden="true"></div>
+            <h3>Planejar o negócio</h3>
+            <p>Defina estratégia, precifique serviços e monte um plano claro para decidir os próximos passos.</p>
           </article>
           <article class="value-item">
-            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/globe.svg" alt=""></div>
-            <h3>Site incluso na assinatura</h3>
-            <p>Hospedagem e domínio do site criado na plataforma ficam inclusos enquanto a assinatura estiver ativa, conforme o plano.</p>
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/financas.svg" alt="" aria-hidden="true"></div>
+            <h3>Organizar finanças</h3>
+            <p>Acompanhe entradas, saídas e assinaturas com relatórios simples, sem planilha complexa.</p>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--navy" id="como-funciona" aria-labelledby="como-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Como funciona</p>
-          <h2 class="section-title" id="como-title">Quatro passos do cadastro ao primeiro resultado</h2>
-          <p class="section-lead">O fluxo é o mesmo em praticamente todos os módulos: escolher, responder, gerar e ajustar.</p>
-        </div>
-        <ol class="steps">
-          <li class="step">
-            <h3>Escolha o que deseja fazer</h3>
-            <p>Abra o módulo certo ou peça indicação ao assistente personalizado.</p>
-          </li>
-          <li class="step">
-            <h3>Responda perguntas simples</h3>
-            <p>Informe o essencial sobre o negócio, o objetivo ou o material que você precisa.</p>
-          </li>
-          <li class="step">
-            <h3>A plataforma prepara o resultado</h3>
-            <p>A IA monta o rascunho, o plano, o site ou o conteúdo com a estrutura pronta.</p>
-          </li>
-          <li class="step">
-            <h3>Revise, ajuste e utilize</h3>
-            <p>Edite o que quiser e use o resultado no seu trabalho, nas redes ou no atendimento.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="section section--cream" id="ferramentas" aria-labelledby="ferramentas-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Ferramentas</p>
-          <h2 class="section-title" id="ferramentas-title">Módulos prontos para trabalho e rotina</h2>
-          <p class="section-lead">Lista pública de módulos ativos na MyEasyAI. Cada um resolve uma tarefa concreta, sem configurar modelo ou prompt.</p>
-        </div>
-
-        <div class="tools-group">
-          <p class="tools-label">Trabalho e renda</p>
-          <div class="tools-grid">
-            <article class="tool-card featured">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/globe.svg" alt=""></div>
-              <h3>MyEasyWebsite</h3>
-              <p>Crie um site com IA, escolha nome ou domínio e publique sem programar.</p>
-              <p class="tool-benefit">Site no ar com hospedagem inclusa na assinatura</p>
-              <button type="button" class="tool-cta" data-module-open="website">Ver demonstração</button>
-            </article>
-            <article class="tool-card featured">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/pen-line.svg" alt=""></div>
-              <h3>MyEasyPosts</h3>
-              <p>Gere posts, legendas, roteiros e calendário editorial para redes, com imagens.</p>
-              <p class="tool-benefit">Conteúdo da semana pronto para publicar</p>
-              <button type="button" class="tool-cta" data-module-open="posts">Ver demonstração</button>
-            </article>
-            <article class="tool-card featured">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/users.svg" alt=""></div>
-              <h3>MyEasyClientes</h3>
-              <p>CRM com IA para contatos, prospecção, vendas, tarefas e rotina comercial.</p>
-              <p class="tool-benefit">Clientes e follow-up em um só lugar</p>
-              <button type="button" class="tool-cta" data-module-open="clientes">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/briefcase.svg" alt=""></div>
-              <h3>MyEasyConsultor</h3>
-              <p>Tire dúvidas de negócio, defina estratégias e monte um plano estruturado.</p>
-              <p class="tool-benefit">Decisões e plano de negócios com apoio guiado</p>
-              <button type="button" class="tool-cta" data-module-open="consultor">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/scale.svg" alt=""></div>
-              <h3>MyEasyJurídico</h3>
-              <p>Organize PDFs, use templates e consulte orientações sobre leis brasileiras.</p>
-              <p class="tool-benefit">Documentos e dúvidas jurídicas mais organizados</p>
-              <button type="button" class="tool-cta" data-module-open="juridico">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/tag.svg" alt=""></div>
-              <h3>MyEasyPreço</h3>
-              <p>Monte preços de produtos ou serviços, margens e tabelas profissionais.</p>
-              <p class="tool-benefit">Precificação clara para vender com segurança</p>
-              <button type="button" class="tool-cta" data-module-open="preco">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/user.svg" alt=""></div>
-              <h3>MyEasyAvatar</h3>
-              <p>Dê nome e aparência ao assistente que acompanha você em toda a plataforma.</p>
-              <p class="tool-benefit">Orientação contínua dentro do produto</p>
-              <button type="button" class="tool-cta" data-module-open="avatar">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/wallet.svg" alt=""></div>
-              <h3>MyEasyFinanças</h3>
-              <p>Controle renda, despesas, assinaturas e investimentos com relatórios claros.</p>
-              <p class="tool-benefit">Visão financeira sem planilha complexa</p>
-              <button type="button" class="tool-cta" data-module-open="financas">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/file-text.svg" alt=""></div>
-              <h3>MyEasyEmprego</h3>
-              <p>Crie currículos alinhados ao que recrutadores buscam e prepare entrevistas.</p>
-              <p class="tool-benefit">Currículo e preparação de candidatura</p>
-              <button type="button" class="tool-cta" data-module-open="emprego">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/users.svg" alt=""></div>
-              <h3>MyEasyRH</h3>
-              <p>Monte vagas, gerencie candidatos, filtre currículos e organize etapas seletivas.</p>
-              <p class="tool-benefit">Triagem e contratação mais organizadas</p>
-              <button type="button" class="tool-cta" data-module-open="rh">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/file-text.svg" alt=""></div>
-              <h3>MyEasyDocs</h3>
-              <p>Guarde e edite documentos, gere resumos e índices com apoio da IA.</p>
-              <p class="tool-benefit">Arquivos úteis sem perder tempo buscando</p>
-              <button type="button" class="tool-cta" data-module-open="docs">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/graduation-cap.svg" alt=""></div>
-              <h3>MyEasyCursos</h3>
-              <p>Peça cursos sob demanda com materiais, plano de estudos e certificado ao final.</p>
-              <p class="tool-benefit">Aprendizado guiado no próprio ritmo</p>
-              <button type="button" class="tool-cta" data-module-open="cursos">Ver demonstração</button>
-            </article>
-            <article class="tool-card">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/smartphone.svg" alt=""></div>
-              <h3>MyEasyAPP</h3>
-              <p>Crie aplicativos com IA, sem escrever código.</p>
-              <p class="tool-benefit">Protótipo ou app simples a partir de ideias</p>
-              <button type="button" class="tool-cta" data-module-open="app">Ver demonstração</button>
-            </article>
-          </div>
-        </div>
-
-        <div class="tools-group">
-          <p class="tools-label">Bônus de vida (inclusos nos planos)</p>
-          <div class="tools-grid">
-            <article class="tool-card bonus">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/dumbbell.svg" alt=""></div>
-              <h3>MyEasyFitness</h3>
-              <p>Treinos personalizados com orientação para manter a rotina de atividade.</p>
-              <p class="tool-benefit">Plano de treino sem contratar personal</p>
-              <button type="button" class="tool-cta" data-module-open="fitness">Ver demonstração</button>
-            </article>
-            <article class="tool-card bonus">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/utensils.svg" alt=""></div>
-              <h3>MyEasyNutrição</h3>
-              <p>Calorias, macros, refeições, lembrete de água e lista de compras da semana.</p>
-              <p class="tool-benefit">Alimentação organizada no dia a dia</p>
-              <button type="button" class="tool-cta" data-module-open="nutricao">Ver demonstração</button>
-            </article>
-            <article class="tool-card bonus">
-              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/plane.svg" alt=""></div>
-              <h3>MyEasyViagens</h3>
-              <p>Roteiros com dicas, estimativa de custos e links para passagens e hospedagem.</p>
-              <p class="tool-benefit">Viagem planejada com menos pesquisa solta</p>
-              <button type="button" class="tool-cta" data-module-open="viagens">Ver demonstração</button>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--navy-mid" id="diferenciais" aria-labelledby="diff-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Diferenciais</p>
-          <h2 class="section-title" id="diff-title">MyEasyAI e assistentes genéricos de IA</h2>
-          <p class="section-lead">Ferramentas como ChatGPT e Gemini são poderosas. A MyEasyAI existe para quem precisa de tarefas prontas, em português, sem dominar prompts.</p>
-        </div>
-        <div class="compare">
-          <div class="compare-col generic">
-            <h3>IA genérica sozinha</h3>
-            <ul>
-              <li><img class="icon" src="assets/icons/x.svg" alt=""> Tela em branco: você define o que pedir</li>
-              <li><img class="icon" src="assets/icons/x.svg" alt=""> Exige prática para escrever bons prompts</li>
-              <li><img class="icon" src="assets/icons/x.svg" alt=""> Muita tentativa e erro até um resultado útil</li>
-              <li><img class="icon" src="assets/icons/x.svg" alt=""> Uma conversa genérica para quase tudo</li>
-              <li><img class="icon" src="assets/icons/x.svg" alt=""> Você configura e organiza sozinho</li>
-            </ul>
-          </div>
-          <div class="compare-col ours">
-            <h3>MyEasyAI</h3>
-            <ul>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Módulos guiados para tarefas reais</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Perguntas simples em português</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Resultado estruturado no primeiro uso</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Vários apps de IA em uma assinatura</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Configuração e fluxos já preparados</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--cream" id="casos-de-uso" aria-labelledby="casos-title">
-      <div class="container">
-        <div class="section-head">
-          <p class="eyebrow">Casos de uso</p>
-          <h2 class="section-title" id="casos-title">Para quem a MyEasyAI foi feita</h2>
-          <p class="section-lead">Pessoas e negócios que precisam de resultado prático, sem virar especialista em tecnologia.</p>
-        </div>
-        <div class="persona-grid">
-          <article class="persona">
-            <h3>Profissionais autônomos</h3>
-            <p>Site, posts e CRM para manter clientes e presença online sem contratar várias pessoas.</p>
-          </article>
-          <article class="persona">
-            <h3>Pequenos negócios</h3>
-            <p>Precificação, finanças, conteúdo e atendimento organizados na mesma plataforma.</p>
-          </article>
-          <article class="persona">
-            <h3>Vendedores e prestadores</h3>
-            <p>Prospecção, follow-up e materiais de venda com módulos de clientes e posts.</p>
-          </article>
-          <article class="persona">
-            <h3>Criadores de conteúdo</h3>
-            <p>Calendário editorial, legendas e imagens para publicar com mais consistência.</p>
-          </article>
-          <article class="persona">
-            <h3>Quem busca emprego</h3>
-            <p>Currículo, preparação de entrevistas e organização da candidatura no MyEasyEmprego.</p>
-          </article>
-          <article class="persona">
-            <h3>Empreendedores iniciantes</h3>
-            <p>Plano de negócios, site e primeiras peças de comunicação sem stack técnica.</p>
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/file-text.svg" alt="" aria-hidden="true"></div>
+            <h3>Preparar currículo e documentos</h3>
+            <p>Organize experiências, monte currículo direcionado e mantenha arquivos importantes acessíveis.</p>
           </article>
         </div>
       </div>
@@ -593,16 +399,16 @@
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Demonstração</p>
-          <h2 class="section-title" id="demo-title">Veja a ferramenta por dentro, sem cadastro</h2>
-          <p class="section-lead">Abra o preview do MyEasyWebsite: o assistente conversa e o site vai sendo montado ao lado. O mesmo padrão vale para os outros módulos.</p>
+          <h2 class="section-title" id="demo-title">Acompanhe a criação do site enquanto conversa com o assistente</h2>
+          <p class="section-lead">Escolha uma tarefa, responda perguntas simples e veja o resultado sendo montado ao lado do chat. Você pode revisar e ajustar cada etapa.</p>
         </div>
         <div class="demo-teaser">
           <div class="demo-teaser-copy">
             <h3>MyEasyWebsite em ação</h3>
-            <p>URL do site, status de montagem, preview da página e chat com Jorge no mesmo fluxo. Estável, sem carrossel quebrado.</p>
+            <p>O assistente Jorge conduz a conversa enquanto a página do site vai tomando forma. URL, status de montagem e chat no mesmo fluxo.</p>
             <div class="cta-row">
               <button type="button" class="btn btn-primary" data-module-open="website">Abrir demonstração do Website</button>
-              <a class="btn btn-secondary" href="#ferramentas">Ver todos os módulos</a>
+              <a class="btn btn-secondary" href="#ferramentas">Ver ferramentas em destaque</a>
             </div>
           </div>
           <button type="button" class="demo-teaser-preview" data-module-open="website" aria-label="Abrir demonstração do MyEasyWebsite">
@@ -626,37 +432,319 @@
       </div>
     </section>
 
+    <section class="section section--navy" id="como-funciona" aria-labelledby="como-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Como funciona</p>
+          <h2 class="section-title" id="como-title">Escolha uma tarefa e avance com orientação</h2>
+          <p class="section-lead">Cada ferramenta segue um caminho claro: você informa o essencial e recebe algo pronto para revisar.</p>
+        </div>
+        <ol class="steps">
+          <li class="step">
+            <h3>Escolha o que você precisa fazer</h3>
+            <p>Abra a ferramenta certa ou peça uma indicação ao assistente personalizado.</p>
+          </li>
+          <li class="step">
+            <h3>Responda algumas perguntas</h3>
+            <p>Informe o essencial sobre o negócio, o objetivo ou o material que você precisa.</p>
+          </li>
+          <li class="step">
+            <h3>Receba uma primeira versão</h3>
+            <p>A plataforma monta o rascunho, o plano, o site ou o conteúdo com estrutura pronta.</p>
+          </li>
+          <li class="step">
+            <h3>Revise e use o resultado</h3>
+            <p>Edite o que quiser e aplique no seu trabalho, nas redes ou no atendimento.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="ferramentas" aria-labelledby="ferramentas-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Ferramentas</p>
+          <h2 class="section-title" id="ferramentas-title">Módulos em destaque para trabalho e rotina</h2>
+          <p class="section-lead">Seis ferramentas principais para começar. Cada uma resolve uma tarefa concreta, com fluxo guiado em português.</p>
+        </div>
+
+        <div class="featured-tools tools-grid">
+          <article class="tool-card featured">
+            <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/globe.svg" alt=""></div>
+            <h3>MyEasyWebsite</h3>
+            <p>Crie um site com IA, escolha nome ou domínio e publique sem programar.</p>
+            <p class="tool-benefit">Site no ar com hospedagem inclusa na assinatura</p>
+            <p class="module-example">Exemplo: montar a página de uma barbearia ou marmitaria em poucos passos.</p>
+            <button type="button" class="tool-cta" data-module-open="website">Ver demonstração</button>
+          </article>
+          <article class="tool-card featured">
+            <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/pen-line.svg" alt=""></div>
+            <h3>MyEasyPosts</h3>
+            <p>Gere posts, legendas, roteiros e calendário editorial para redes, com imagens.</p>
+            <p class="tool-benefit">Conteúdo da semana pronto para publicar</p>
+            <p class="module-example">Exemplo: criar cinco legendas para Instagram de uma loja de roupas.</p>
+            <button type="button" class="tool-cta" data-module-open="posts">Ver demonstração</button>
+          </article>
+          <article class="tool-card featured">
+            <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/users.svg" alt=""></div>
+            <h3>MyEasyClientes</h3>
+            <p>CRM com IA para contatos, prospecção, vendas, tarefas e rotina comercial.</p>
+            <p class="tool-benefit">Clientes e follow-up em um só lugar</p>
+            <p class="module-example">Exemplo: registrar leads de uma feira e agendar retornos da semana.</p>
+            <button type="button" class="tool-cta" data-module-open="clientes">Ver demonstração</button>
+          </article>
+          <article class="tool-card featured">
+            <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/briefcase.svg" alt=""></div>
+            <h3>MyEasyConsultor</h3>
+            <p>Tire dúvidas de negócio, defina estratégias e monte um plano estruturado.</p>
+            <p class="tool-benefit">Decisões e plano de negócios com apoio guiado</p>
+            <p class="module-example">Exemplo: estruturar oferta e preço para um serviço de consultoria.</p>
+            <button type="button" class="tool-cta" data-module-open="consultor">Ver demonstração</button>
+          </article>
+          <article class="tool-card featured">
+            <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/wallet.svg" alt=""></div>
+            <h3>MyEasyFinanças</h3>
+            <p>Controle renda, despesas, assinaturas e investimentos com relatórios claros.</p>
+            <p class="tool-benefit">Visão financeira sem planilha complexa</p>
+            <p class="module-example">Exemplo: mapear gastos fixos e ver quanto sobra no mês.</p>
+            <button type="button" class="tool-cta" data-module-open="financas">Ver demonstração</button>
+          </article>
+          <article class="tool-card featured">
+            <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/file-text.svg" alt=""></div>
+            <h3>MyEasyEmprego</h3>
+            <p>Organize suas experiências em um currículo claro e direcionado para a vaga.</p>
+            <p class="tool-benefit">Currículo e preparação de candidatura</p>
+            <p class="module-example">Exemplo: adaptar o currículo para uma vaga de assistente administrativo.</p>
+            <button type="button" class="tool-cta" data-module-open="emprego">Ver demonstração</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="todos-modulos" aria-labelledby="todos-modulos-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Catálogo completo</p>
+          <h2 class="section-title" id="todos-modulos-title">Todos os módulos disponíveis</h2>
+          <p class="section-lead">Explore o restante das ferramentas por categoria. Cada módulo mantém o mesmo fluxo guiado.</p>
+        </div>
+
+        <details class="modules-accordion" open>
+          <summary class="tools-label">Trabalho e renda</summary>
+          <div class="tools-grid">
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/scale.svg" alt=""></div>
+              <h3>MyEasyJurídico</h3>
+              <p>Organize documentos, use modelos de apoio e encontre informações com mais facilidade.</p>
+              <p class="tool-benefit">Documentos e consultas jurídicas mais organizados</p>
+              <p class="disclaimer">Este recurso não substitui orientação jurídica profissional.</p>
+              <button type="button" class="tool-cta" data-module-open="juridico">Ver demonstração</button>
+            </article>
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/tag.svg" alt=""></div>
+              <h3>MyEasyPreço</h3>
+              <p>Monte preços de produtos ou serviços, margens e tabelas profissionais.</p>
+              <p class="tool-benefit">Precificação clara para vender com segurança</p>
+              <button type="button" class="tool-cta" data-module-open="preco">Ver demonstração</button>
+            </article>
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/user.svg" alt=""></div>
+              <h3>MyEasyAvatar</h3>
+              <p>Dê nome e aparência ao assistente que acompanha você em toda a plataforma.</p>
+              <p class="tool-benefit">Orientação contínua dentro do produto</p>
+              <button type="button" class="tool-cta" data-module-open="avatar">Ver demonstração</button>
+            </article>
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/users.svg" alt=""></div>
+              <h3>MyEasyRH</h3>
+              <p>Monte vagas, gerencie candidatos, filtre currículos e organize etapas seletivas.</p>
+              <p class="tool-benefit">Triagem e contratação mais organizadas</p>
+              <button type="button" class="tool-cta" data-module-open="rh">Ver demonstração</button>
+            </article>
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/file-text.svg" alt=""></div>
+              <h3>MyEasyDocs</h3>
+              <p>Guarde e edite documentos, gere resumos e índices com apoio da IA.</p>
+              <p class="tool-benefit">Arquivos úteis sem perder tempo buscando</p>
+              <button type="button" class="tool-cta" data-module-open="docs">Ver demonstração</button>
+            </article>
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/graduation-cap.svg" alt=""></div>
+              <h3>MyEasyCursos</h3>
+              <p>Peça cursos sob demanda com materiais, plano de estudos e certificado emitido pela plataforma ao concluir.</p>
+              <p class="tool-benefit">Aprendizado guiado no próprio ritmo</p>
+              <button type="button" class="tool-cta" data-module-open="cursos">Ver demonstração</button>
+            </article>
+            <article class="tool-card">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/smartphone.svg" alt=""></div>
+              <h3>MyEasyAPP</h3>
+              <p>Crie aplicativos com IA, sem escrever código.</p>
+              <p class="tool-benefit">Protótipo ou app simples a partir de ideias</p>
+              <button type="button" class="tool-cta" data-module-open="app">Ver demonstração</button>
+            </article>
+          </div>
+        </details>
+
+        <details class="modules-accordion">
+          <summary class="tools-label">Bônus de vida (inclusos nos planos)</summary>
+          <div class="tools-grid">
+            <article class="tool-card bonus">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/dumbbell.svg" alt=""></div>
+              <h3>MyEasyFitness</h3>
+              <p>Organize treinos e rotina de atividade com planejamento personalizado.</p>
+              <p class="tool-benefit">Plano de treino estruturado para acompanhar sua semana</p>
+              <p class="disclaimer">Este recurso não substitui avaliação de profissional de educação física ou saúde.</p>
+              <button type="button" class="tool-cta" data-module-open="fitness">Ver demonstração</button>
+            </article>
+            <article class="tool-card bonus">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/utensils.svg" alt=""></div>
+              <h3>MyEasyNutrição</h3>
+              <p>Organize refeições, preferências alimentares e lista de compras da semana.</p>
+              <p class="tool-benefit">Alimentação planejada no dia a dia</p>
+              <p class="disclaimer">Este recurso não substitui acompanhamento de nutricionista ou profissional de saúde.</p>
+              <button type="button" class="tool-cta" data-module-open="nutricao">Ver demonstração</button>
+            </article>
+            <article class="tool-card bonus">
+              <div class="tool-icon-tile" aria-hidden="true"><img class="icon" src="assets/icons/plane.svg" alt=""></div>
+              <h3>MyEasyViagens</h3>
+              <p>Roteiros com dicas, estimativa de custos e links para passagens e hospedagem.</p>
+              <p class="tool-benefit">Viagem planejada com menos pesquisa solta</p>
+              <button type="button" class="tool-cta" data-module-open="viagens">Ver demonstração</button>
+            </article>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section section--navy-mid" id="para-quem" aria-labelledby="para-quem-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Para quem é</p>
+          <h2 class="section-title" id="para-quem-title">Feita para quem precisa de resultado prático</h2>
+          <p class="section-lead">Se você quer usar IA no trabalho sem virar especialista em tecnologia, a MyEasyAI foi pensada para a sua rotina.</p>
+        </div>
+        <div class="persona-grid">
+          <article class="persona">
+            <h3>Você trabalha por conta própria</h3>
+            <p>Precisa divulgar serviços, responder clientes e manter presença online sem contratar várias ferramentas.</p>
+          </article>
+          <article class="persona">
+            <h3>Você tem um pequeno negócio</h3>
+            <p>Quer vender com mais organização, acompanhar finanças e produzir conteúdo na mesma plataforma.</p>
+          </article>
+          <article class="persona">
+            <h3>Você cuida de vendas ou atendimento</h3>
+            <p>Precisa registrar contatos, fazer follow-up e preparar materiais comerciais com agilidade.</p>
+          </article>
+          <article class="persona">
+            <h3>Você publica com frequência</h3>
+            <p>Busca ideias, legendas e calendário editorial para manter redes sociais ativas.</p>
+          </article>
+          <article class="persona">
+            <h3>Você está buscando emprego</h3>
+            <p>Quer organizar experiências, montar currículo direcionado e se preparar para entrevistas.</p>
+          </article>
+          <article class="persona">
+            <h3>Você está começando agora</h3>
+            <p>Quer tirar a ideia do papel com site, plano e primeiras peças de comunicação, sem conhecimento técnico.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--cream" id="diferenciais" aria-labelledby="diff-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Diferenciais</p>
+          <h2 class="section-title" id="diff-title">Por que usar a MyEasyAI</h2>
+          <p class="section-lead">Ferramentas guiadas, interface em português e recursos reunidos para tarefas do dia a dia.</p>
+        </div>
+        <div class="value-grid">
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/layers.svg" alt="" aria-hidden="true"></div>
+            <h3>Ferramentas guiadas</h3>
+            <p>Cada módulo conduz você passo a passo para uma tarefa específica, sem montar prompt do zero.</p>
+          </article>
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/briefcase.svg" alt="" aria-hidden="true"></div>
+            <h3>Tarefas organizadas</h3>
+            <p>Site, clientes, posts, finanças e documentos ficam acessíveis em um só lugar.</p>
+          </article>
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/sparkles.svg" alt="" aria-hidden="true"></div>
+            <h3>Sem tela em branco</h3>
+            <p>Você responde perguntas simples e recebe um resultado estruturado para revisar.</p>
+          </article>
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/globe.svg" alt="" aria-hidden="true"></div>
+            <h3>Interface em português</h3>
+            <p>Fluxos, textos e suporte pensados para quem trabalha em português brasileiro.</p>
+          </article>
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/clock.svg" alt="" aria-hidden="true"></div>
+            <h3>Recursos reunidos</h3>
+            <p>Menos contas espalhadas e menos ferramentas soltas para resolver o mesmo problema.</p>
+          </article>
+          <article class="value-item">
+            <div class="icon-wrap"><img class="icon icon-lg" src="assets/icons/message-circle.svg" alt="" aria-hidden="true"></div>
+            <h3>Suporte humano</h3>
+            <p>Atendimento em português para dúvidas sobre a plataforma, além do assistente dentro do produto.</p>
+          </article>
+        </div>
+        <div class="compare">
+          <div class="compare-col generic">
+            <h3>Assistente genérico de IA</h3>
+            <ul>
+              <li><img class="icon" src="assets/icons/x.svg" alt="" aria-hidden="true"> Você começa com uma tela em branco</li>
+              <li><img class="icon" src="assets/icons/x.svg" alt="" aria-hidden="true"> Exige prática para formular bons pedidos</li>
+              <li><img class="icon" src="assets/icons/x.svg" alt="" aria-hidden="true"> Resultado varia conforme como você escreve</li>
+              <li><img class="icon" src="assets/icons/x.svg" alt="" aria-hidden="true"> Uma conversa para quase tudo</li>
+            </ul>
+          </div>
+          <div class="compare-col ours">
+            <h3>MyEasyAI</h3>
+            <ul>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Ferramentas guiadas para tarefas reais</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Perguntas simples em português</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Resultado estruturado desde o primeiro uso</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Vários módulos em uma assinatura</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section--navy" id="confianca" aria-labelledby="confianca-title">
       <div class="container">
         <div class="section-head">
           <p class="eyebrow">Confiança</p>
-          <h2 class="section-title" id="confianca-title">Sinais verificáveis, sem números inventados</h2>
-          <p class="section-lead">Informações institucionais apresentadas publicamente pela MyEasyAI.</p>
+          <h2 class="section-title" id="confianca-title">Segurança e suporte para usar com tranquilidade</h2>
+          <p class="section-lead">Pagamentos protegidos, suporte em português e infraestrutura de fornecedores reconhecidos.</p>
         </div>
         <div class="trust-grid">
           <article class="trust-item">
-            <img class="icon icon-lg" src="assets/icons/shield.svg" alt="">
+            <img class="icon icon-lg" src="assets/icons/credit-card.svg" alt="" aria-hidden="true">
             <h3>Pagamentos pela Stripe</h3>
             <p>Cobrança processada pela Stripe. A MyEasyAI não vê nem guarda os dados do cartão.</p>
           </article>
           <article class="trust-item">
-            <img class="icon icon-lg" src="assets/icons/shield.svg" alt="">
+            <img class="icon icon-lg" src="assets/icons/shield-check.svg" alt="" aria-hidden="true">
             <h3>Cibersegurança CyberShield</h3>
-            <p>A empresa cita auditoria e pentest validados pela CyberShield em sua comunicação pública.</p>
+            <p>A empresa cita auditoria e testes de segurança validados pela CyberShield.</p>
           </article>
           <article class="trust-item">
-            <img class="icon icon-lg" src="assets/icons/globe.svg" alt="">
+            <img class="icon icon-lg" src="assets/icons/globe.svg" alt="" aria-hidden="true">
             <h3>Empresa americana</h3>
             <p>Sediada nos Estados Unidos, com centro de desenvolvimento e operação nos EUA.</p>
           </article>
           <article class="trust-item">
-            <img class="icon icon-lg" src="assets/icons/message-circle.svg" alt="">
+            <img class="icon icon-lg" src="assets/icons/message-circle.svg" alt="" aria-hidden="true">
             <h3>Suporte humano em português</h3>
             <p>Atendimento por pessoas reais, em português, pela central de ajuda e tickets.</p>
           </article>
         </div>
         <div class="provider-row">
-          <span><strong>Infraestrutura citada:</strong> Google, Microsoft, Claude, DeepSeek, Meta AI, Cloudflare</span>
+          <p><strong>Tecnologias utilizadas na plataforma:</strong> Google, Microsoft, Claude, DeepSeek, Meta AI e Cloudflare. São provedores de infraestrutura e modelos de IA usados para operar os serviços, não indicam parceria comercial direta.</p>
         </div>
       </div>
     </section>
@@ -665,8 +753,8 @@
       <div class="container">
         <div class="section-head center">
           <p class="eyebrow">Planos</p>
-          <h2 class="section-title" id="planos-title">Comece grátis por 30 dias. Depois escolha o plano.</h2>
-          <p class="section-lead">Valores públicos da MyEasyAI. Anual com até 70% OFF em relação ao mensal de tabela. Teste sem cartão.</p>
+          <h2 class="section-title" id="planos-title">Teste por 30 dias e escolha seu plano depois</h2>
+          <p class="section-lead">Comece sem cartão. Ao fim do período gratuito, escolha os recursos que fazem sentido para sua rotina.</p>
         </div>
 
         <div class="billing-wrap">
@@ -679,69 +767,68 @@
         <div class="plans-grid">
           <article class="plan-card" data-plan="individual">
             <h3>Individual</h3>
-            <p class="plan-modules">12 módulos</p>
             <p class="plan-was" data-was>de R$ 79,40/mês</p>
             <div class="plan-price">
               <span class="amount" data-price-annual="29,70" data-price-monthly="79,40">R$ 29,70</span>
               <span class="period">/mês</span>
             </div>
+            <p class="plan-billing-detail" data-show="annual">Equivalente a R$ 29,70/mês · Total anual: R$ 299,70</p>
             <p class="plan-note" data-show="annual">12x no cartão · ou R$ 299,70 à vista no Pix</p>
-            <p class="plan-note" data-show="monthly">Cobrança mensal</p>
+            <p class="plan-note" data-show="monthly">Cobrança mensal de R$ 79,40</p>
             <p class="plan-desc">Ponto de partida para começar com IA e subir de plano quando precisar.</p>
             <ul class="plan-features">
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Assistente de IA personalizado</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> 12 módulos prontos</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> 1 site com domínio e hospedagem</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Atualizações e novos módulos sem custo extra</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Suporte por e-mail</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Assistente de IA personalizado</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 12 módulos prontos</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 1 site com domínio e hospedagem</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Atualizações e novos módulos sem custo extra</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Suporte por e-mail</li>
             </ul>
             <a class="btn btn-primary" href="https://myeasyai.com/auth/signup">Testar grátis</a>
           </article>
 
-          <article class="plan-card featured" data-plan="plus">
-            <span class="plan-badge">15 módulos</span>
+          <article class="plan-card" data-plan="plus">
             <h3>Plus</h3>
-            <p class="plan-modules">15 módulos</p>
             <p class="plan-was" data-was>de R$ 119,40/mês</p>
             <div class="plan-price">
               <span class="amount" data-price-annual="39,70" data-price-monthly="119,40">R$ 39,70</span>
               <span class="period">/mês</span>
             </div>
+            <p class="plan-billing-detail" data-show="annual">Equivalente a R$ 39,70/mês · Total anual: R$ 399,70</p>
             <p class="plan-note" data-show="annual">12x no cartão · ou R$ 399,70 à vista no Pix</p>
-            <p class="plan-note" data-show="monthly">Cobrança mensal</p>
-            <p class="plan-desc">Por pouco mais que o Individual, libera mais módulos e capacidade.</p>
+            <p class="plan-note" data-show="monthly">Cobrança mensal de R$ 119,40</p>
+            <p class="plan-desc">Mais módulos e capacidade para quem já usa a plataforma no dia a dia.</p>
             <ul class="plan-features">
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Tudo do Individual</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> 15 módulos</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> 3 sites com hospedagem</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Limites maiores</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Suporte prioritário</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Tudo do Individual</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 15 módulos</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 3 sites com hospedagem</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Limites maiores</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Suporte prioritário</li>
             </ul>
             <a class="btn btn-primary" href="https://myeasyai.com/auth/signup">Testar grátis</a>
           </article>
 
           <article class="plan-card" data-plan="premium">
             <h3>Premium</h3>
-            <p class="plan-modules">17+ módulos</p>
             <p class="plan-was" data-was>de R$ 159,40/mês</p>
             <div class="plan-price">
               <span class="amount" data-price-annual="49,70" data-price-monthly="159,40">R$ 49,70</span>
               <span class="period">/mês</span>
             </div>
+            <p class="plan-billing-detail" data-show="annual">Equivalente a R$ 49,70/mês · Total anual: R$ 499,70</p>
             <p class="plan-note" data-show="annual">12x no cartão · ou R$ 499,70 à vista no Pix</p>
-            <p class="plan-note" data-show="monthly">Cobrança mensal</p>
+            <p class="plan-note" data-show="monthly">Cobrança mensal de R$ 159,40</p>
             <p class="plan-desc">Mais módulos, app próprio, geração de imagens e modelo premium de IA.</p>
             <ul class="plan-features">
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Tudo do Plus</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> 17+ módulos liberados</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> App próprio e geração de imagens</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Aulas ao vivo com especialistas</li>
-              <li><img class="icon" src="assets/icons/check.svg" alt=""> Modelo premium de IA</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Tudo do Plus</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 17+ módulos liberados</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> App próprio e geração de imagens</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Aulas ao vivo com especialistas</li>
+              <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> Modelo premium de IA</li>
             </ul>
             <a class="btn btn-primary" href="https://myeasyai.com/auth/signup">Testar grátis</a>
           </article>
         </div>
-        <p class="plans-footnote">30 dias grátis · cancele em 1 clique · upgrade paga só a diferença</p>
+        <p class="plans-footnote">30 dias grátis. Cancele quando quiser. Ao fazer upgrade, você paga apenas a diferença.</p>
       </div>
     </section>
 
@@ -750,22 +837,22 @@
         <div class="section-head center">
           <p class="eyebrow">FAQ</p>
           <h2 class="section-title" id="faq-title">Perguntas frequentes</h2>
-          <p class="section-lead">Respostas diretas com base nas informações públicas da plataforma.</p>
+          <p class="section-lead">Confira as respostas para as dúvidas mais comuns antes de começar.</p>
         </div>
         <div class="faq-list faq-list--on-dark">
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-1" id="faq-btn-1">
               Eu preciso saber programar ou entender de prompts?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-1" role="region" aria-labelledby="faq-btn-1" hidden>
-              <p>Não. Os módulos já vêm configurados. Você responde perguntas simples em português e a plataforma monta o resultado.</p>
+              <p>Não. As ferramentas já vêm configuradas. Você responde perguntas simples em português e a plataforma monta o resultado.</p>
             </div>
           </div>
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-2" id="faq-btn-2">
               O que são os módulos?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-2" role="region" aria-labelledby="faq-btn-2" hidden>
               <p>São ferramentas prontas para tarefas específicas: site, clientes, posts, finanças, currículo e outras. Cada módulo guia o uso sem tela em branco.</p>
@@ -774,25 +861,25 @@
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-3" id="faq-btn-3">
               Como o assistente funciona?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-3" role="region" aria-labelledby="faq-btn-3" hidden>
-              <p>Você personaliza nome e aparência. Ele conhece a plataforma, indica o módulo certo e também funciona como chat de IA completo dentro do produto.</p>
+              <p>Você personaliza nome e aparência. Ele conhece a plataforma, indica o módulo certo e também funciona como chat de IA dentro do produto.</p>
             </div>
           </div>
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-4" id="faq-btn-4">
               Qual a diferença para o ChatGPT ou o Gemini?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-4" role="region" aria-labelledby="faq-btn-4" hidden>
-              <p>Assistentes genéricos pedem que você saiba o que pedir. A MyEasyAI oferece módulos guiados para tarefas reais, com resultados estruturados e suporte em português.</p>
+              <p>Assistentes genéricos pedem que você saiba o que pedir e começam com uma tela em branco. A MyEasyAI oferece ferramentas guiadas para tarefas reais, com resultados estruturados e suporte em português.</p>
             </div>
           </div>
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">
               Preciso de cartão no teste de 30 dias?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-btn-5" hidden>
               <p>Não. Você começa sem cartão. Só adiciona um meio de pagamento se quiser continuar depois do período gratuito. A plataforma avisa por e-mail antes do fim do teste.</p>
@@ -801,7 +888,7 @@
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-6" id="faq-btn-6">
               Como cancelo?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-btn-6" hidden>
               <p>Você pode cancelar quando quiser, em poucos cliques na conta, sem precisar falar com atendimento.</p>
@@ -810,25 +897,25 @@
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-7" id="faq-btn-7">
               O que é o MyEasyCursos?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-7" role="region" aria-labelledby="faq-btn-7" hidden>
-              <p>É o módulo que gera cursos sob demanda, com materiais, plano de estudos, acompanhamento e certificado ao final.</p>
+              <p>É o módulo que gera cursos sob demanda, com materiais, plano de estudos, acompanhamento e certificado emitido pela plataforma ao concluir.</p>
             </div>
           </div>
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-8" id="faq-btn-8">
               Novos módulos entram com custo extra?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-8" role="region" aria-labelledby="faq-btn-8" hidden>
-              <p>A MyEasyAI informa que atualizações e novos módulos entram sem custo extra dentro das regras do plano contratado.</p>
+              <p>Atualizações e novos módulos tendem a entrar sem custo extra dentro das regras do plano contratado.</p>
             </div>
           </div>
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-9" id="faq-btn-9">
               Como funciona o suporte?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-9" role="region" aria-labelledby="faq-btn-9" hidden>
               <p>Há central de ajuda e tickets com atendimento humano em português. Planos superiores têm suporte prioritário por e-mail.</p>
@@ -837,19 +924,19 @@
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-10" id="faq-btn-10">
               Meus dados estão seguros?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-10" role="region" aria-labelledby="faq-btn-10" hidden>
-              <p>A plataforma usa infraestrutura de provedores reconhecidos e pagamentos pela Stripe. Há menção pública a auditoria CyberShield. Dados de cartão não ficam armazenados na MyEasyAI.</p>
+              <p>A plataforma usa infraestrutura de provedores reconhecidos e pagamentos pela Stripe. Há menção a auditoria CyberShield. Dados de cartão não ficam armazenados na MyEasyAI.</p>
             </div>
           </div>
           <div class="faq-item">
             <button type="button" aria-expanded="false" aria-controls="faq-11" id="faq-btn-11">
               Como funcionam os planos Individual, Plus e Premium?
-              <img class="icon" src="assets/icons/chevron-down.svg" alt="">
+              <img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true">
             </button>
             <div class="faq-panel" id="faq-11" role="region" aria-labelledby="faq-btn-11" hidden>
-              <p>A diferença principal está na quantidade de módulos, sites, armazenamento e recursos avançados. Você pode começar no Individual e fazer upgrade depois, pagando só a diferença.</p>
+              <p>A diferença principal está na quantidade de módulos, sites, armazenamento e recursos avançados. Você pode começar no Individual e fazer upgrade depois, pagando apenas a diferença.</p>
             </div>
           </div>
         </div>
@@ -859,10 +946,10 @@
     <section class="section section--cream final-cta" id="comecar" aria-labelledby="cta-final-title">
       <div class="container">
         <p class="eyebrow">Pronto para testar</p>
-        <h2 class="section-title" id="cta-final-title">Você já viu os módulos. Agora use um deles no seu problema real.</h2>
-        <p class="section-lead">Abra a conta, personalize o assistente e rode o primeiro módulo no teste de 30 dias. Sem cartão na entrada.</p>
+        <h2 class="section-title" id="cta-final-title">Comece com uma tarefa que você precisa resolver hoje</h2>
+        <p class="section-lead">Crie sua conta, personalize seu assistente e teste sua primeira ferramenta por 30 dias. Sem cartão para começar.</p>
         <div class="cta-row">
-          <a class="btn btn-primary btn-lg" href="https://myeasyai.com/auth/signup">Começar 30 dias grátis</a>
+          <a class="btn btn-primary btn-lg" href="https://myeasyai.com/auth/signup">Testar grátis por 30 dias</a>
           <a class="btn btn-secondary btn-lg" href="#planos">Comparar planos</a>
         </div>
       </div>
@@ -873,14 +960,14 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <a class="brand" href="#topo" aria-label="MyEasyAI">
-          <img src="assets/logo/logo.svg" width="36" height="36" alt="">
+          <img src="assets/logo/logo.svg" width="36" height="36" alt="" aria-hidden="true">
           <span class="brand-name">MyEasyAI</span>
         </a>
-        <p>Plataforma com módulos de IA prontos para pessoas e pequenos negócios que precisam de resultado sem conhecimento técnico.</p>
+        <p>Plataforma com ferramentas de IA prontas para pessoas e pequenos negócios que precisam de resultado sem conhecimento técnico.</p>
         <div class="social-links">
-          <a href="https://www.instagram.com/myeasyai" aria-label="Instagram MyEasyAI"><img class="icon" src="assets/icons/instagram.svg" alt=""></a>
-          <a href="https://www.youtube.com/@MyEasyAI" aria-label="YouTube MyEasyAI"><img class="icon" src="assets/icons/youtube.svg" alt=""></a>
-          <a href="https://x.com/myeasyai" aria-label="X MyEasyAI"><img class="icon" src="assets/icons/x-twitter.svg" alt=""></a>
+          <a href="https://www.instagram.com/myeasyai" aria-label="Instagram MyEasyAI"><img class="icon" src="assets/icons/instagram.svg" alt="" aria-hidden="true"></a>
+          <a href="https://www.youtube.com/@MyEasyAI" aria-label="YouTube MyEasyAI"><img class="icon" src="assets/icons/youtube.svg" alt="" aria-hidden="true"></a>
+          <a href="https://x.com/myeasyai" aria-label="X MyEasyAI"><img class="icon" src="assets/icons/x-twitter.svg" alt="" aria-hidden="true"></a>
         </div>
       </div>
       <div class="footer-col">
@@ -899,8 +986,8 @@
       <div class="footer-col">
         <h4>Legal e empresa</h4>
         <a href="https://myeasyai.com/">Site oficial</a>
-        <a href="https://myeasyai.com/#faq">Política de Privacidade</a>
-        <a href="https://myeasyai.com/#packages">Termos de uso</a>
+        <a href="https://myeasyai.com/support" id="link-privacy">Política de Privacidade</a>
+        <a href="https://myeasyai.com/support" id="link-terms">Termos de uso</a>
         <a href="https://myeasyai.com/auth/login">Entrar</a>
         <a href="https://myeasyai.com/auth/signup">Criar conta</a>
         <p style="margin-top:0.75rem;font-size:0.85rem">Empresa americana · suporte em português · support@myeasyai.com</p>
@@ -908,7 +995,6 @@
     </div>
     <div class="container footer-bottom">
       <p>© <span id="year"></span> MyEasyAI. Todos os direitos reservados.</p>
-      <p>Landing estática para demonstração e futura integração.</p>
     </div>
   </footer>
 
@@ -923,12 +1009,12 @@
           </div>
         </div>
         <button type="button" class="module-dialog-close" id="module-dialog-close" aria-label="Fechar">
-          <img class="icon" src="assets/icons/x.svg" alt="">
+          <img class="icon" src="assets/icons/x.svg" alt="" aria-hidden="true">
         </button>
       </header>
       <div class="module-dialog-body" id="module-dialog-body"></div>
       <footer class="module-dialog-foot">
-        <a class="btn btn-primary btn-lg module-dialog-cta" href="https://myeasyai.com/auth/signup">Começar 30 dias grátis</a>
+        <a class="btn btn-primary btn-lg module-dialog-cta" href="https://myeasyai.com/auth/signup">Testar grátis por 30 dias</a>
       </footer>
     </div>
   </dialog>
