@@ -1273,7 +1273,17 @@ button {
 
 .billing-wrap {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.billing-hint {
+  margin: 0;
+  max-width: 28rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--muted-light);
 }
 
 .billing-btn {
@@ -2790,6 +2800,78 @@ body.modal-open {
 
 .section--navy .disclaimer {
   color: var(--muted-dark);
+}
+
+.plan-avail-badge {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  background: rgba(193, 255, 0, 0.2);
+  color: var(--lime);
+  border: 1px solid rgba(193, 255, 0, 0.45);
+}
+
+.section--cream .plan-avail-badge,
+.legal-page .plan-avail-badge {
+  background: rgba(0, 76, 217, 0.08);
+  color: var(--blue);
+  border-color: rgba(0, 76, 217, 0.25);
+}
+
+.legal-page {
+  background: var(--cream);
+  color: var(--text-on-light);
+}
+
+.legal-page .site-header {
+  position: relative;
+  background: var(--navy);
+}
+
+.legal-main {
+  min-height: 60vh;
+}
+
+.legal-content {
+  max-width: 42rem;
+}
+
+.legal-body {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  font-size: 1.0625rem;
+  color: var(--muted-light);
+}
+
+.legal-body a {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.legal-body ul {
+  display: grid;
+  gap: 0.5rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+}
+
+.legal-page .footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-page .footer-bottom a {
+  color: var(--muted-dark);
+  text-decoration: underline;
 }
 
 @media (max-width: 720px) {

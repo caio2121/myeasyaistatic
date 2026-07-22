@@ -2,8 +2,8 @@
   "use strict";
 
   var SITE_LEGAL = {
-    privacyUrl: "https://myeasyai.com/support",
-    termsUrl: "https://myeasyai.com/support"
+    privacyUrl: "privacy.html",
+    termsUrl: "terms.html"
   };
 
   var yearEl = document.getElementById("year");

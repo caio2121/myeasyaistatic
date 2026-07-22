@@ -22,7 +22,16 @@ Configuracao central em `index.html` (`#site-env`) e meta `myeasyai:canonical-pr
 
 ## Links legais
 
-Politica de Privacidade e Termos de Uso no site oficial abrem em modal, sem URL publica dedicada. No codigo, `SITE_LEGAL` em `script.js` e os links `#link-privacy` / `#link-terms` apontam temporariamente para `https://myeasyai.com/support` ate as URLs finais serem informadas.
+No site oficial, Politica de Privacidade e Termos de Uso abrem em modal, sem URL publica dedicada. Nesta landing estatica, `privacy.html` e `terms.html` sao paginas provisórias honestas; `SITE_LEGAL` em `script.js` e os links `#link-privacy` / `#link-terms` apontam para esses arquivos relativos (compativeis com GitHub Pages em subpath).
+
+## Publicacao no GitHub Pages
+
+1. Em Settings > Pages, use Deploy from a branch.
+2. Selecione a branch `main` e a pasta `/ (root)`.
+3. Confirme o historico de deployments apos o push.
+4. Abra a URL em aba anonima e confira o HTML bruto (View Source).
+5. Valide se o `<title>` e o hero publicados correspondem ao ultimo commit de `main`.
+6. Se a CDN servir versao antiga, force um novo deploy com um commit no repositorio e aguarde alguns minutos.
 
 ## Arquivos principais
 
