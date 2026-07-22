@@ -2245,3 +2245,468 @@ body.modal-open {
 .section--cream .compare-col.generic li {
   color: var(--muted-light);
 }
+
+.results-row {
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .results-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .results-row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.result-group {
+  padding: 0.25rem 0;
+}
+
+.result-group .icon {
+  margin-bottom: 0.75rem;
+  color: var(--blue);
+  filter: none;
+}
+
+.section--cream .result-group .icon {
+  filter: brightness(0) saturate(100%) invert(18%) sepia(90%) saturate(2500%) hue-rotate(210deg);
+}
+
+.result-group h3 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.result-group p {
+  font-size: 0.95rem;
+  color: var(--muted-light);
+}
+
+.feature-spotlight {
+  display: grid;
+  gap: 1.75rem;
+  align-items: center;
+  margin-bottom: 2.75rem;
+  padding-bottom: 2.75rem;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+@media (min-width: 960px) {
+  .feature-spotlight {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 2.5rem;
+  }
+
+  .feature-spotlight--app .feature-visual {
+    order: -1;
+  }
+}
+
+.feature-pair {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2.75rem;
+}
+
+@media (min-width: 960px) {
+  .feature-pair {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+.feature-card {
+  display: grid;
+  gap: 1.25rem;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
+.feature-label {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--lime);
+  margin-bottom: 0.65rem;
+}
+
+.section--cream .feature-label {
+  color: var(--blue);
+}
+
+.feature-copy h3 {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.75rem;
+}
+
+.feature-copy > p {
+  color: var(--muted-dark);
+  margin-bottom: 1rem;
+}
+
+.feature-points {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.feature-points li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.925rem;
+  color: var(--muted-dark);
+}
+
+.feature-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55rem;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--lime);
+}
+
+.feature-result {
+  font-weight: 600;
+  color: var(--text-on-dark);
+  margin-bottom: 1rem;
+}
+
+.section--cream .feature-result {
+  color: var(--text-on-light);
+}
+
+.feature-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.feature-visual .ui-panel,
+.ui-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  color: var(--text-on-dark);
+}
+
+.ui-chrome {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+  font-size: 0.75rem;
+  color: var(--muted-dark);
+}
+
+.ui-chrome span {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.ui-chrome em {
+  margin-left: 0.5rem;
+  font-style: normal;
+}
+
+.ui-site-body strong {
+  display: block;
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+}
+
+.ui-chip,
+.ui-kicker {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+
+.ui-kicker {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.ui-crm-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.ui-crm-cols h4 {
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+  color: var(--muted-dark);
+}
+
+.ui-crm-cols span,
+.ui-post-row,
+.ui-finance-row {
+  display: block;
+  padding: 0.55rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.8rem;
+}
+
+.ui-post-row,
+.ui-finance-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.ui-finance-row.accent {
+  border: 1px solid rgba(193, 255, 0, 0.35);
+}
+
+.ui-resume ul {
+  margin-top: 0.75rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.ui-resume li {
+  font-size: 0.85rem;
+  color: var(--muted-dark);
+}
+
+.ui-app-screens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ui-app-screens span {
+  padding: 0.7rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.other-modules-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+@media (min-width: 800px) {
+  .other-modules-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.other-module {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0.65rem 0;
+  border-top: 1px solid rgba(17, 21, 39, 0.08);
+}
+
+.other-module strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+}
+
+.other-module span {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--muted-light);
+  margin-top: 0.15rem;
+}
+
+.cta-row--after-list {
+  margin-top: 1.5rem;
+}
+
+.persona-grid--four {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 720px) {
+  .persona-grid--four {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .persona-grid--four {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.trust-grid--compact {
+  gap: 1.25rem;
+}
+
+.plans-compare-wrap {
+  margin-top: 2rem;
+  overflow-x: auto;
+}
+
+.plans-compare {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.plans-compare caption {
+  text-align: left;
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  caption-side: top;
+}
+
+.plans-compare th,
+.plans-compare td {
+  padding: 0.75rem 0.85rem;
+  border-bottom: 1px solid rgba(17, 21, 39, 0.1);
+  text-align: left;
+  vertical-align: top;
+}
+
+.plans-compare thead th {
+  font-family: var(--font-display);
+  font-weight: 700;
+  background: rgba(17, 21, 39, 0.04);
+}
+
+.pv-finance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.pv-finance-card {
+  padding: 0.65rem;
+  border-radius: var(--radius-sm);
+  background: rgba(9, 18, 50, 0.05);
+}
+
+.pv-finance-card span {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--muted-light);
+}
+
+.pv-finance-card strong {
+  font-size: 0.95rem;
+}
+
+.pv-finance-card.accent {
+  background: rgba(193, 255, 0, 0.18);
+}
+
+.pv-finance-list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0 0 0.75rem;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--muted-light);
+}
+
+.pv-resume-block {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(17, 21, 39, 0.08);
+}
+
+.pv-resume-block strong {
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.pv-resume-block p {
+  font-size: 0.875rem;
+  color: var(--muted-light);
+}
+
+.pv-app-flow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-bottom: 0.85rem;
+}
+
+.pv-app-flow span {
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background: rgba(9, 18, 50, 0.06);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.pv-app-phone {
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(17, 21, 39, 0.12);
+  background: #fff;
+  max-width: 14rem;
+}
+
+.pv-app-phone p {
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: var(--muted-light);
+}
+
+.section--navy .feature-copy > p,
+.section--navy .feature-points li {
+  color: var(--muted-dark);
+}
+
+.section--navy .feature-copy h3,
+.section--navy .feature-result {
+  color: var(--text-on-dark);
+}
+
+.section--navy .disclaimer {
+  color: var(--muted-dark);
+}
+
+@media (max-width: 720px) {
+  .ui-crm-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-actions .btn {
+    width: 100%;
+  }
+
+  .pv-finance-grid {
+    grid-template-columns: 1fr;
+  }
+}
