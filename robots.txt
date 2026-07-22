@@ -1,8 +1,2 @@
 User-agent: *
 Disallow: /
-
-User-agent: OAI-SearchBot
-Disallow: /
-
-# Staging (GitHub Pages): bloqueia indexacao.
-# Producao em https://myeasyai.com/: troque para Allow: / e Sitemap: https://myeasyai.com/sitemap.xml
