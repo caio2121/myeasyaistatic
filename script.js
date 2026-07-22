@@ -87,6 +87,67 @@
   if (annualBtn) annualBtn.addEventListener("click", function () { applyBilling("annual"); });
   applyBilling(document.body.getAttribute("data-billing") || "annual");
 
+  var productTabs = Array.prototype.slice.call(document.querySelectorAll(".product-tab"));
+  var productPanels = Array.prototype.slice.call(document.querySelectorAll(".product-panel"));
+
+  function activateProductTab(tabId, focusTab) {
+    var selected = null;
+    productTabs.forEach(function (tab) {
+      var isActive = tab.getAttribute("data-tab") === tabId;
+      tab.setAttribute("aria-selected", String(isActive));
+      tab.tabIndex = isActive ? 0 : -1;
+      if (isActive) selected = tab;
+    });
+    productPanels.forEach(function (panel) {
+      var match = panel.id === "panel-" + tabId;
+      if (match) panel.removeAttribute("hidden");
+      else panel.setAttribute("hidden", "");
+    });
+    if (focusTab && selected) selected.focus();
+  }
+
+  productTabs.forEach(function (tab, index) {
+    tab.addEventListener("click", function () {
+      activateProductTab(tab.getAttribute("data-tab"), false);
+    });
+    tab.addEventListener("keydown", function (event) {
+      var nextIndex = index;
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+        nextIndex = (index + 1) % productTabs.length;
+      } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+        nextIndex = (index - 1 + productTabs.length) % productTabs.length;
+      } else if (event.key === "Home") {
+        nextIndex = 0;
+      } else if (event.key === "End") {
+        nextIndex = productTabs.length - 1;
+      } else {
+        return;
+      }
+      event.preventDefault();
+      activateProductTab(productTabs[nextIndex].getAttribute("data-tab"), true);
+    });
+  });
+
+  if (location.hash) {
+    var hash = location.hash.replace("#", "");
+    var hashPanel = document.querySelector('.product-panel[data-anchor="' + hash + '"]');
+    if (hashPanel && hashPanel.id.indexOf("panel-") === 0) {
+      activateProductTab(hashPanel.id.replace("panel-", ""), false);
+    }
+  }
+
+  var otherToggle = document.getElementById("toggle-other-modules");
+  var otherExtra = document.getElementById("other-modules-extra");
+  if (otherToggle && otherExtra) {
+    otherToggle.addEventListener("click", function () {
+      var open = otherToggle.getAttribute("aria-expanded") === "true";
+      otherToggle.setAttribute("aria-expanded", String(!open));
+      otherToggle.textContent = open ? "Ver todas as ferramentas" : "Ocultar ferramentas extras";
+      if (open) otherExtra.setAttribute("hidden", "");
+      else otherExtra.removeAttribute("hidden");
+    });
+  }
+
   var MODULES = {
     website: { name: "MyEasyWebsite", tagline: "Informe o negócio e revise a primeira versão do site", icon: "assets/icons/globe.svg", kind: "website" },
     posts: { name: "MyEasyPosts", tagline: "Ideias, legendas e calendário para revisar", icon: "assets/icons/pen-line.svg", kind: "posts" },

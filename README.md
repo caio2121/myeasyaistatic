@@ -38,6 +38,18 @@ No site oficial, Politica de Privacidade e Termos de Uso abrem em modal, sem URL
 - `index.html`
 - `styles.css`
 - `script.js`
+- `privacy.html`
+- `terms.html`
 - `robots.txt`
 - `sitemap.xml`
 - `assets/`
+
+## Smoke check (staging)
+
+Apos alterar a landing, valide localmente:
+
+1. Abrir `index.html` no navegador (desktop e largura ~375px).
+2. Menu mobile, tabs de `#ferramentas` (teclado e clique), toggle Mensal/Anual.
+3. Dialogs dos modulos, FAQ, expandir "Ver todas as ferramentas".
+4. Links `privacy.html` e `terms.html` no rodape.
+5. Confirmar `meta robots` = `noindex, nofollow` enquanto `env` for staging.
