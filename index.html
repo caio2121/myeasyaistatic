@@ -66,11 +66,11 @@
         "description": "Ferramentas de IA prontas para criar site, produzir conteúdo, organizar clientes, controlar finanças, preparar currículo e estruturar aplicativos, sem programação e sem prompts.",
         "offers": [
           { "@type": "Offer", "name": "Teste grátis", "price": "0", "priceCurrency": "BRL", "description": "Teste grátis por 30 dias, sem cartão para começar.", "url": "https://myeasyai.com/auth/signup" },
-          { "@type": "Offer", "name": "Individual anual", "price": "299.70", "priceCurrency": "BRL", "description": "Plano Individual cobrado anualmente (R$ 299,70/ano), equivalente a R$ 29,70 por mês.", "url": "https://myeasyai.com/auth/signup" },
+          { "@type": "Offer", "name": "Individual anual Pix", "price": "299.70", "priceCurrency": "BRL", "description": "Plano Individual anual à vista no Pix por R$ 299,70. No cartão: 12 parcelas de R$ 29,70 (equivalente mensal anunciado).", "url": "https://myeasyai.com/auth/signup" },
           { "@type": "Offer", "name": "Individual mensal", "price": "79.40", "priceCurrency": "BRL", "description": "Plano Individual com cobrança mensal de R$ 79,40 por mês.", "url": "https://myeasyai.com/auth/signup" },
-          { "@type": "Offer", "name": "Plus anual", "price": "399.70", "priceCurrency": "BRL", "description": "Plano Plus cobrado anualmente (R$ 399,70/ano), equivalente a R$ 39,70 por mês.", "url": "https://myeasyai.com/auth/signup" },
+          { "@type": "Offer", "name": "Plus anual Pix", "price": "399.70", "priceCurrency": "BRL", "description": "Plano Plus anual à vista no Pix por R$ 399,70. No cartão: 12 parcelas de R$ 39,70 (equivalente mensal anunciado).", "url": "https://myeasyai.com/auth/signup" },
           { "@type": "Offer", "name": "Plus mensal", "price": "119.40", "priceCurrency": "BRL", "description": "Plano Plus com cobrança mensal de R$ 119,40 por mês.", "url": "https://myeasyai.com/auth/signup" },
-          { "@type": "Offer", "name": "Premium anual", "price": "499.70", "priceCurrency": "BRL", "description": "Plano Premium cobrado anualmente (R$ 499,70/ano), equivalente a R$ 49,70 por mês.", "url": "https://myeasyai.com/auth/signup" },
+          { "@type": "Offer", "name": "Premium anual Pix", "price": "499.70", "priceCurrency": "BRL", "description": "Plano Premium anual à vista no Pix por R$ 499,70. No cartão: 12 parcelas de R$ 49,70 (equivalente mensal anunciado).", "url": "https://myeasyai.com/auth/signup" },
           { "@type": "Offer", "name": "Premium mensal", "price": "159.40", "priceCurrency": "BRL", "description": "Plano Premium com cobrança mensal de R$ 159,40 por mês.", "url": "https://myeasyai.com/auth/signup" }
         ],
         "publisher": { "@id": "https://myeasyai.com/#organization" },
@@ -125,7 +125,7 @@
           {
             "@type": "Question",
             "name": "Meus dados ficam seguros?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Você paga pela Stripe, sem que a MyEasyAI guarde os dados do cartão. Você também conta com auditoria de segurança citada pela CyberShield." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Você paga pela Stripe, sem que a MyEasyAI guarde os dados do cartão. Você também conta com auditoria e testes de segurança validados pela CyberShield." }
           },
           {
             "@type": "Question",
@@ -516,7 +516,7 @@
         </div>
         <div class="trust-grid trust-grid--compact">
           <article class="trust-item"><img class="icon icon-lg" src="assets/icons/credit-card.svg" alt="" aria-hidden="true"><h3>Pagamentos pela Stripe</h3><p>A MyEasyAI não vê nem guarda os dados do cartão.</p></article>
-          <article class="trust-item"><img class="icon icon-lg" src="assets/icons/shield-check.svg" alt="" aria-hidden="true"><h3>Auditoria CyberShield</h3><p>A empresa cita auditoria e testes de segurança validados.</p></article>
+          <article class="trust-item"><img class="icon icon-lg" src="assets/icons/shield-check.svg" alt="" aria-hidden="true"><h3>Auditoria CyberShield</h3><p>Você conta com auditoria e testes de segurança validados pela CyberShield.</p></article>
           <article class="trust-item"><img class="icon icon-lg" src="assets/icons/message-circle.svg" alt="" aria-hidden="true"><h3>Suporte em português</h3><p>Atendimento humano pela central de ajuda e tickets.</p></article>
           <article class="trust-item"><img class="icon icon-lg" src="assets/icons/globe.svg" alt="" aria-hidden="true"><h3>Empresa americana</h3><p>Sediada nos Estados Unidos, com operação nos EUA.</p></article>
         </div>
@@ -532,16 +532,17 @@
         <div class="billing-wrap">
           <div class="billing-toggle" role="group" aria-label="Periodicidade do plano">
             <button type="button" class="billing-btn" id="billing-monthly" aria-pressed="false" data-billing="monthly">Mensal</button>
-            <button type="button" class="billing-btn" id="billing-annual" aria-pressed="true" data-billing="annual">Anual <span class="badge">Até 70% OFF</span></button>
+            <button type="button" class="billing-btn" id="billing-annual" aria-pressed="true" data-billing="annual">Anual <span class="badge">Até 69% OFF</span></button>
           </div>
+          <p class="billing-hint">O desconto compara o preço mensal com o equivalente mensal do plano anual no cartão.</p>
         </div>
         <div class="plans-grid">
           <article class="plan-card" data-plan="individual">
             <h3>Individual</h3>
             <p class="plan-was" data-was>de R$ 79,40/mês</p>
             <div class="plan-price"><span class="amount" data-price-annual="29,70" data-price-monthly="79,40">R$ 29,70</span><span class="period">/mês</span></div>
-            <p class="plan-billing-detail" data-show="annual">Equivalente a R$ 29,70/mês · Total anual: R$ 299,70</p>
-            <p class="plan-note" data-show="annual">12x no cartão · ou R$ 299,70 à vista no Pix</p>
+            <p class="plan-billing-detail" data-show="annual">12 parcelas de R$ 29,70 no plano anual</p>
+            <p class="plan-note" data-show="annual">ou R$ 299,70 à vista no Pix</p>
             <p class="plan-note" data-show="monthly">Cobrança mensal de R$ 79,40</p>
             <ul class="plan-features">
               <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 12 módulos</li>
@@ -555,8 +556,8 @@
             <h3>Plus</h3>
             <p class="plan-was" data-was>de R$ 119,40/mês</p>
             <div class="plan-price"><span class="amount" data-price-annual="39,70" data-price-monthly="119,40">R$ 39,70</span><span class="period">/mês</span></div>
-            <p class="plan-billing-detail" data-show="annual">Equivalente a R$ 39,70/mês · Total anual: R$ 399,70</p>
-            <p class="plan-note" data-show="annual">12x no cartão · ou R$ 399,70 à vista no Pix</p>
+            <p class="plan-billing-detail" data-show="annual">12 parcelas de R$ 39,70 no plano anual</p>
+            <p class="plan-note" data-show="annual">ou R$ 399,70 à vista no Pix</p>
             <p class="plan-note" data-show="monthly">Cobrança mensal de R$ 119,40</p>
             <ul class="plan-features">
               <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 15 módulos</li>
@@ -570,8 +571,8 @@
             <h3>Premium</h3>
             <p class="plan-was" data-was>de R$ 159,40/mês</p>
             <div class="plan-price"><span class="amount" data-price-annual="49,70" data-price-monthly="159,40">R$ 49,70</span><span class="period">/mês</span></div>
-            <p class="plan-billing-detail" data-show="annual">Equivalente a R$ 49,70/mês · Total anual: R$ 499,70</p>
-            <p class="plan-note" data-show="annual">12x no cartão · ou R$ 499,70 à vista no Pix</p>
+            <p class="plan-billing-detail" data-show="annual">12 parcelas de R$ 49,70 no plano anual</p>
+            <p class="plan-note" data-show="annual">ou R$ 499,70 à vista no Pix</p>
             <p class="plan-note" data-show="monthly">Cobrança mensal de R$ 159,40</p>
             <ul class="plan-features">
               <li><img class="icon" src="assets/icons/check.svg" alt="" aria-hidden="true"> 17+ módulos</li>
@@ -601,7 +602,7 @@
           <div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-5" id="faq-btn-5">Posso cancelar quando quiser?<img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></button><div class="faq-panel" id="faq-5" role="region" aria-labelledby="faq-btn-5" hidden><p>Sim. Você cancela quando quiser na própria conta, sem precisar falar com atendimento.</p></div></div>
           <div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-6" id="faq-btn-6">O site criado fica publicado?<img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></button><div class="faq-panel" id="faq-6" role="region" aria-labelledby="faq-btn-6" hidden><p>Sim. Enquanto sua assinatura estiver ativa, o site que você criar fica publicado com domínio e hospedagem, conforme o plano.</p></div></div>
           <div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-7" id="faq-btn-7">O MyEasyAPP cria um aplicativo funcional?<img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></button><div class="faq-panel" id="faq-7" role="region" aria-labelledby="faq-btn-7" hidden><p>Você descreve a ideia e organiza telas, fluxos e a primeira versão visual. Use o resultado como protótipo para testar, apresentar ou continuar desenvolvendo.</p></div></div>
-          <div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-8" id="faq-btn-8">Meus dados ficam seguros?<img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></button><div class="faq-panel" id="faq-8" role="region" aria-labelledby="faq-btn-8" hidden><p>Você paga pela Stripe, sem que a MyEasyAI guarde os dados do cartão. Você também conta com auditoria de segurança citada pela CyberShield.</p></div></div>
+          <div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-8" id="faq-btn-8">Meus dados ficam seguros?<img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></button><div class="faq-panel" id="faq-8" role="region" aria-labelledby="faq-btn-8" hidden><p>Você paga pela Stripe, sem que a MyEasyAI guarde os dados do cartão. Você também conta com auditoria e testes de segurança validados pela CyberShield.</p></div></div>
           <div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-9" id="faq-btn-9">O suporte é feito em português?<img class="icon" src="assets/icons/chevron-down.svg" alt="" aria-hidden="true"></button><div class="faq-panel" id="faq-9" role="region" aria-labelledby="faq-btn-9" hidden><p>Sim. Você fala com suporte humano em português pela central de ajuda e pelos tickets.</p></div></div>
         </div>
       </div>
